@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibox.TemperatureShowActivity">
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/text1"
+        android:layout_height="40dp"
+        android:layout_width="368dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="8dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="8dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="货物运输状态变化曲线"
+        android:textSize="20sp"
+         android:layout_gravity="center"
+        android:gravity="center"/>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview1"
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="26dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/text1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="10dp" />
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/line_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="198dp"
+                android:layout_centerInParent="true"
+                android:background="#ffdcb9"
+                android:foregroundGravity="center"/>
+
+            <TextView
+                android:id="@+id/express_ordernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text="过去一天内温度变化曲线图"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="最高温度：约40度   最低温度：22度    平均温度：25度"/>-->
+
+           <!-- <Button
+                android:id="@+id/look_through"
+                android:layout_width="148dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:text="查看详情" />-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="7dp"
+        app:cardCornerRadius="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cardview1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/another_line_chart"
+                android:layout_width="wrap_content"
+                android:layout_height="198dp"
+                android:layout_centerInParent="true"
+                android:background="#ffdcb9"
+                android:foregroundGravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text="过去一天内湿度变化曲线图"
+                android:textColor="#000"
+                android:layout_gravity="center"
+                android:textSize="16sp" />
+
+            <!-- <Button
+                 android:id="@+id/look_through"
+                 android:layout_width="148dp"
+                 android:layout_height="50dp"
+                 android:layout_marginTop="5dp"
+                 android:background="@color/colorPrimary"
+                 android:layout_gravity="center"
+                 android:text="查看详情" />-->
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>

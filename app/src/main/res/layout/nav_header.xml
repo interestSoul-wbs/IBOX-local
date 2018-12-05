@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:padding="10dp"
+    android:background="?attr/colorPrimary">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:id="@+id/icon_logo"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/background"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="18dp" />
+    <TextView
+        android:id="@+id/drawer_userID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户ID:"
+        android:textSize="20sp"
+
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/drawer_username"
+        android:layout_alignStart="@+id/drawer_username" />
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名:"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:id="@+id/drawer_username"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/drawer_userID"
+        android:layout_toLeftOf="@+id/icon_logo"
+        android:layout_toStartOf="@+id/icon_logo" />
+    <TextView
+        android:id="@+id/icon_name"
+        android:text="王健"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/drawer_username"
+        android:layout_alignBottom="@+id/drawer_username"
+        android:layout_alignLeft="@+id/icon_id"
+        android:layout_alignStart="@+id/icon_id" />
+    <TextView
+        android:id="@+id/icon_id"
+        android:text="000001"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

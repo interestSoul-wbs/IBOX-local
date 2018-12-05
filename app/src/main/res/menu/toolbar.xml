@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+       <item
+           android:id="@+id/addExpress"
+           android:checkable="true"
+           android:enabled="true"
+           android:icon="@drawable/ic_action_add2"
+           android:showAsAction="always"
+           android:title="add"
+           android:visible="true"
+           app:showAsAction="always"
+           tools:ignore="AppCompatResource" />
+       <item
+           android:id="@+id/update"
+           android:checkable="true"
+           android:enabled="true"
+           android:icon="@drawable/ic_action_reflash"
+           android:title="delete"
+           android:visible="true"
+           app:showAsAction="always"
+           tools:ignore="AppCompatResource" />
+</menu>

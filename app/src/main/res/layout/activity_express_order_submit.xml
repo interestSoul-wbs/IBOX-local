@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ibox.ExpressOrderSubmitActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_ordersubmit"
+        android:layout_width="368dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/notice"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_ordersubmit"
+        app:layout_constraintVertical_bias="0.00999999"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="温馨提示：在提交订单之前请买方和卖方针对运输条件的要求进行详细商议，这将确保货物处于运输的最佳状态，避免双方损失，谢谢合作！"/>
+        </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/order_cardview"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/notice"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:layout_marginRight="8dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="fill_parent"
+                android:layout_height="400dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:layout_editor_absoluteX="4dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#33000000"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/order_sendID" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="58dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="18dp"
+                    android:gravity="center"
+                    android:text="发件人ID"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/order_sendID"
+                    android:layout_width="103dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="31dp"
+                    android:layout_marginStart="31dp"
+                    android:layout_marginTop="16dp"
+                    android:text="19"
+                    app:layout_constraintLeft_toRightOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="350dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="51dp"
+                    android:background="#33000000"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/order_sendID" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="62dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="收件人ID"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/order_receiveID"
+                    android:layout_width="101dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="4dp"
+                    android:hint="receiveID"
+                    android:text="22"
+                    app:layout_constraintLeft_toRightOf="@+id/textView3"
+                    app:layout_constraintTop_toBottomOf="@+id/order_sendID" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="78dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="23dp"
+                    android:gravity="center"
+                    android:text="快递盒编号"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                <EditText
+                    android:id="@+id/order_boxID"
+                    android:layout_width="104dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="boxID"
+                    android:text="2"
+                    app:layout_constraintLeft_toRightOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/order_receiveID" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="62dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="27dp"
+                    android:gravity="center"
+                    android:text="物品"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <EditText
+                    android:id="@+id/order_thing"
+                    android:layout_width="94dp"
+                    android:layout_height="37dp"
+                    android:layout_marginLeft="121dp"
+                    android:layout_marginStart="121dp"
+                    android:layout_marginTop="14dp"
+                    android:hint="thing"
+                    android:text="xxx"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/order_boxID" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="62dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="温度范围"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <EditText
+                    android:id="@+id/order_minT"
+                    android:layout_width="61dp"
+                    android:layout_height="41dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="minT"
+                    android:text="20"
+                    app:layout_constraintLeft_toRightOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/order_thing" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="43dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="——"
+                    app:layout_constraintLeft_toRightOf="@+id/order_minT"
+                    app:layout_constraintTop_toBottomOf="@+id/order_thing" />
+
+                <EditText
+                    android:id="@+id/order_maxT"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="maxT"
+                    android:text="40"
+                    app:layout_constraintLeft_toRightOf="@+id/textView9"
+                    app:layout_constraintTop_toBottomOf="@+id/order_thing" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="62dp"
+                    android:layout_height="27dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="22dp"
+                    android:gravity="center"
+                    android:text="湿度范围"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <EditText
+                    android:id="@+id/order_minH"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginTop="15dp"
+                    android:hint="minH"
+                    android:text="20"
+                    app:layout_constraintLeft_toRightOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/order_minT" />
+
+                <TextView
+
+                    android:id="@+id/textView6"
+                    android:layout_width="43dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="31dp"
+                    android:gravity="center"
+                    android:text="——"
+                    app:layout_constraintLeft_toRightOf="@+id/order_minH"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <EditText
+                    android:id="@+id/order_maxH"
+                    android:layout_width="67dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:hint="maxH"
+                    android:text="80"
+                    app:layout_constraintLeft_toRightOf="@+id/textView6"
+                    app:layout_constraintTop_toBottomOf="@+id/order_maxT" />
+
+                <TextView
+
+                    android:id="@+id/textView10"
+                    android:layout_width="71dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:text="允许最大加速度"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <EditText
+                    android:id="@+id/order_accelation"
+                    android:layout_width="100dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="9dp"
+                    android:hint="acce"
+                    android:text="10"
+                    app:layout_constraintLeft_toRightOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/order_minH" />
+
+
+                <!-- <TextView
+                 android:layout_width="33dp"
+                 android:layout_height="wrap_content"
+                 android:text="xxxxxxx"
+                 android:layout_marginRight="8dp"
+                 app:layout_constraintRight_toRightOf="parent"
+                 android:layout_marginLeft="8dp"
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 android:layout_marginTop="8dp"
+                 app:layout_constraintHorizontal_bias="0.7" />-->
+            </android.support.constraint.ConstraintLayout>
+
+
+            <!-- <TextView
+                 android:layout_width="33dp"
+                 android:layout_height="wrap_content"
+                 android:text="xxxxxxx"
+                 android:layout_marginRight="8dp"
+                 app:layout_constraintRight_toRightOf="parent"
+                 android:layout_marginLeft="8dp"
+                 app:layout_constraintLeft_toLeftOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 android:layout_marginTop="8dp"
+                 app:layout_constraintHorizontal_bias="0.7" />-->
+        </android.support.constraint.ConstraintLayout>
+        </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/order_cardview"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp">
+        <Button
+            android:id="@+id/order_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@color/colorPrimaryDark"
+            android:text="提交"
+            android:textColor="@color/white"
+            />
+        </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

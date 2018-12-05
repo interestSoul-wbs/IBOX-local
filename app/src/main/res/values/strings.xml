@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IBox</string>
+    <string name="login_layout_hint_user_name">用户名/手机</string>
+    <string name="login_layout_login">登录</string>
+    <string name="login_layout_hint_password">密码</string>
+    <string name="login_layout_registered">注册</string>
+    <string name="login_layout_forgive_password">忘记密码？</string>
+    <string name="registered_layout_user_name">用户名</string>
+    <string name="registered_layout_password">密码</string>
+    <string name="registered_layout_phonenumber">手机号</string>
+</resources>
